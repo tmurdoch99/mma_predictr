@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ufc.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @ufc.date %>
+</p>
+
+<p>
+  <strong>Where:</strong>
+  <%= @ufc.where %>
+</p>
+<% @ufc.predictions.each do |prediction| %>
+<td> <%= prediction.fighter %></td>
+<td> <%= prediction.how   %></td>
+<td> <%= prediction.when   %></td>
+<td><%= prediction.ufc_id %></td>
+
+<% end %>
+<%= link_to 'New predictions', new_ufc_prediction_path(@ufc) %>
+<%= link_to 'Edit', edit_ufc_path(@ufc) %> |
+<%= link_to 'Back', ufcs_path %>

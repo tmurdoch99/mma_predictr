@@ -1,0 +1,21 @@
+<%= simple_form_for [@ufc, @prediction] do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+  <% fights = Fight.where(:ufc_id => '1') %>
+  <% fights.each do |fight| %>
+   <%= fight.fighter_one_name %>
+   <%=  image_tag(fight.fighter_one_image.url, width: "50px") %>
+    <%= f.input :fighter %>
+	<%= fight.fighter_two_name %>
+   <%=  image_tag(fight.fighter_two_image.url, width: "50px") %>
+    <%= f.input :fighter %>
+    <%= f.input :how %>
+    <%= f.input :when %>
+	<% end %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

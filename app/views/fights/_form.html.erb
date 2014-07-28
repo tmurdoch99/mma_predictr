@@ -1,0 +1,16 @@
+<%= simple_form_for @fight, :html => {:multipart => true} do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    
+	<%= f.input :ufc_id %>
+    <%= f.input :fighter_one_name %>
+    <%= f.file_field :fighter_one_image %>
+    <%= f.input :fighter_two_name %>
+    <%= f.file_field :fighter_two_image %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

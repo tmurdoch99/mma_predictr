@@ -9,12 +9,14 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
+gem "letter_opener", :group => :development
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'devise_invitable'
 gem 'pg'
 gem 'pundit'
 gem 'simple_form'
+gem 'carrierwave'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19]

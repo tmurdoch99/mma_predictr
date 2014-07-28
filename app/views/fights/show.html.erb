@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ufc:</strong>
+  <%= @fight.ufc %>
+</p>
+
+<p>
+  <strong>Fighter one name:</strong>
+  <%= @fight.fighter_one_name %>
+</p>
+
+<p>
+  <strong>Fighter one image:</strong>
+  <%= @fight.fighter_one_image %>
+</p>
+
+<p>
+  <strong>Fighter two name:</strong>
+  <%= @fight.fighter_two_name %>
+</p>
+
+<p>
+  <strong>Fighter two image:</strong>
+  <%= @fight.fighter_two_image %>
+</p>
+
+<%= link_to 'Edit', edit_fight_path(@fight) %> |
+<%= link_to 'Back', fights_path %>

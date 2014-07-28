@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ufc: MyString
+  fighter_one_name: MyString
+  fighter_one_image: MyString
+  fighter_two_name: MyString
+  fighter_two_image: MyString
+
+two:
+  ufc: MyString
+  fighter_one_name: MyString
+  fighter_one_image: MyString
+  fighter_two_name: MyString
+  fighter_two_image: MyString

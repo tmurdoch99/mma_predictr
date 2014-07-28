@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fight:</strong>
+  <%= @prediction.fight_id %>
+</p>
+
+<p>
+  <strong>Ufc:</strong>
+  <%= @prediction.ufc %>
+</p>
+
+<p>
+  <strong>Fighter:</strong>
+  <%= @prediction.fighter %>
+</p>
+
+<p>
+  <strong>How:</strong>
+  <%= @prediction.how %>
+</p>
+
+<p>
+  <strong>When:</strong>
+  <%= @prediction.when %>
+</p>
+
+<%= link_to 'Edit', edit_prediction_path(@prediction) %> |
+<%= link_to 'Back', predictions_path %>

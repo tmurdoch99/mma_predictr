@@ -1,0 +1,33 @@
+<h1>Listing fights</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ufc</th>
+      <th>Fighter one name</th>
+      <th>Fighter one image</th>
+      <th>Fighter two name</th>
+      <th>Fighter two image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fights.each do |fight| %>
+      <tr>
+        <td><%= fight.ufc %></td>
+        <td><%= fight.fighter_one_name %></td>
+        <td><%=  image_tag(fight.fighter_one_image.url, width: "50px") %></td>
+        <td><%= fight.fighter_two_name %></td>
+        <td><%=  image_tag(fight.fighter_two_image.url, width: "50px") %>
+        <td><%= link_to 'Show', fight %></td>
+        <td><%= link_to 'Edit', edit_fight_path(fight) %></td>
+        <td><%= link_to 'Destroy', fight, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fight', new_fight_path %>

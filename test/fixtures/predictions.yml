@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fight_id: 
+  ufc: MyString
+  fighter: MyString
+  how: MyString
+  when: MyString
+
+two:
+  fight_id: 
+  ufc: MyString
+  fighter: MyString
+  how: MyString
+  when: MyString
